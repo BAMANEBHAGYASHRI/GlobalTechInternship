@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing Page</title>
+    
+    <link rel="stylesheet" href="../css/landing.css">
+</head>
+<body>
+    <div class="container">
+        <!-- bg video -->
+        <video autoplay loop muted plays-inline class="bg-video">
+            <source src="../IMAGES/video (1080p).mp4" type="video/mp4">
+        </video>
+        <!-- navigation bar -->
+        <nav>
+            <img src="../IMAGES/landing_logo.jpg" alt="logo" class="logo">
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about  ">ABOUT</a></li>
+                <li><a href="#place">POPULAR PLACES</a></li>  
+                <li><a href="login.html">LOGIN</a></li>
+            </ul>
+        </nav>
+        <h1 class="content" id="home">INDIA</h1>
+    </div>
+    <!-- about section -->
+    <div class="about" id="about">
+        <h1>About</h1>
+        <div class="about-container" >
+            <section class="mumbai">
+                <div class="img">
+                    <img src="../IMAGES/mumbai1.jpg" alt="mumbai">
+                </div>
+                <div class="info">
+                    <h1 style="color: rgb(182, 177, 178); font-size: 40px;">MUMBAI</h1>
+                    Mumbai (formerly called Bombay) is a densely populated city on India’s west coast. A financial center, it's India's largest city. On the Mumbai Harbour waterfront stands the iconic Gateway of India stone arch, built by the British Raj in 1924. Offshore, nearby Elephanta Island holds ancient cave temples dedicated to the Hindu god Shiva. The city's also famous as the heart of the Bollywood film industry.
+                </div>
+            </section>
+            <section class="goa">
+                <div class="img">
+                    <img src="../IMAGES/goa.jpg" alt="goa">
+                </div>
+                <div class="info">
+                    <h1 style="color: rgb(182, 177, 178); font-size: 40px; margin-top: 5px;">GOA</h1>
+                    Goa is a state in western India with coastlines stretching along the Arabian Sea. Its long history as a Portuguese colony prior to 1961 is evident in its preserved 17th-century churches and the area’s tropical spice plantations. Goa is also known for its beaches, ranging from popular stretches at Baga and Palolem to those in laid-back fishing villages such as Agonda.
+                </div>
+            </section>
+            <section class="agra">
+                <div class="img">
+                    <img src="../IMAGES/agra.jpg" alt="agra">
+                </div>
+                <div class="info">
+                    <h1 style="color: rgb(182, 177, 178); font-size: 40px; margin-top: 5px;">AGRA</h1>
+                    Agra is a city on the banks of the Yamuna river in the Indian state of Uttar Pradesh, about 230 kilometres south-east of the national capital Delhi and 330 km west of the state capital Lucknow.Agra is best known for the Taj Mahal (17th century), designated a UNESCO World Heritage site in 1983. A complex mausoleum, the Taj Mahal is often considered to be the world's best example of Mughal architecture.
+                </div>
+            </section>
+            <section class="Bengaluru">
+                <div class="img">
+                    <img src="../IMAGES/bengaluru.jpg" alt="bengaluru">
+                </div>
+                <div class="info">
+                    <h1 style="color: rgb(182, 177, 178); font-size: 40px; margin-top: 5px;">BENGALURU</h1>
+                    Bengaluru (also called Bangalore) is the capital of India's southern Karnataka state. The center of India's high-tech industry, the city is also known for its parks and nightlife. By Cubbon Park, Vidhana Soudha is a Neo-Dravidian legislative building. Former royal residences include 19th-century Bangalore Palace, modeled after England’s Windsor Castle, and Tipu Sultan’s Summer Palace, an 18th-century teak structure.
+                </div>
+            </section>
+            <section class="jaipur">
+                <div class="img">
+                    <img src="../IMAGES/jaipur.jpg" alt="jaipur">
+                </div>
+                <div class="info">
+                    <h1 style="color: rgb(182, 177, 178); font-size: 40px; margin-top: 5px;">JAIPUR</h1>
+                    Jaipur is the capital of India’s Rajasthan state. It evokes the royal family that once ruled the region and that, in 1727, founded what is now called the Old City, or “Pink City” for its trademark building color. At the center of its stately street grid (notable in India) stands the opulent, colonnaded City Palace complex. With gardens, courtyards and museums, part of it is still a royal residence.
+                </div>
+            </section>
+            <section class="chennai">
+                <div class="img">
+                    <img src="../IMAGES/chennai.jpg" alt="chennai">
+                </div>
+                <div class="info">
+                    <h1 style="color: rgb(182, 177, 178); font-size: 40px; margin-top: 5px;">CHENNAI</h1>
+                    Chennai, on the Bay of Bengal in eastern India, is the capital of the state of Tamil Nadu. The city is home to Fort St. George, built in 1644 and now a museum showcasing the city’s roots as a British military garrison and East India Company trading outpost, when it was called Madras. Religious sites include Kapaleeshwarar Temple, adorned with carved and painted gods, and St. Mary’s, a 17th-century Anglican church. 
+                </div>
+            </section>
+        </div>
+
+    </div>
+    <!-- popular places -->
+    
+    <div class="places" id="place">
+        <h1 style="margin-top: 60px;">POPULAR PLACES</h1>
+        <div class="pplaces" >
+            <img class="img-slider" src="../IMAGES/delhi.jpg" >
+            <img class="img-slider" src="../IMAGES/Shimla1.jpg" >
+            <img class="img-slider" src="../IMAGES/coorg.jpg" >
+            <img class="img-slider" src="../IMAGES/manali.jpg" >
+            <img class="img-slider" src="../IMAGES/Agra1.jpg" >
+            <img class="img-slider" src="../IMAGES/mumbai1.jpg" >
+        </div>
+        
+        <a href="blog.html"><h1 class="resume"><span style="color: black;">View more</span></h1>
+        </a>
+    </div>
+    
+
+
+
+
+
+
+<!-- silder -->
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("img-slider");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+        </script>
+</body>
+</html>
