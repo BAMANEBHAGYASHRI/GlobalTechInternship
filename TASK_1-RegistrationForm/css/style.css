@@ -4,9 +4,10 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url(../images/images.jpg);
+    /* background-image: url(../images/images.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
+    background-image: linear-gradient(135deg ,#2bc49b,#597ab6);
    display: flex;
    justify-content: center;
    align-items: center;
@@ -18,6 +19,7 @@ body{
     max-width: 700px;
     width: 100%;
     /* background: #2bc49b; */
+    background: #fff;
     padding: 25px 30px;
     border-radius: 5px;
 }
@@ -55,7 +57,7 @@ form .user .input-detail{
     padding-left: 15px;
     font-size: 20px;
     height: 45px;
-    width: 100%;
+    width: 900%;
     outline: none;
     border-bottom-width: 2px;
     transition: all 0.3s ease;
@@ -104,13 +106,13 @@ form .button input{
     height: 100%;
     outline: none;
     border: none;
-    /* width: 100%; */
-    width: 50%;
+    width: 100%;
+    /* width: 50%; */
     font-size: 18px;
     font-weight: 500;
     border-radius: 5px;
     letter-spacing: 1px;
-    background: linear-gradient(135deg , #71b7e6,#9b59b6);
+    background: linear-gradient(135deg , #71b7e6,#7086d5);
 }
 form .button input:hover{
     background: linear-gradient(-135deg , #71b7e6,#9b59b6);

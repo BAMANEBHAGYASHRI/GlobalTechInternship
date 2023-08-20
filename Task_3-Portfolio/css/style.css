@@ -9,6 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(150deg ,#fff,#2bc49b);
 }
 nav{
     width: 90%;
